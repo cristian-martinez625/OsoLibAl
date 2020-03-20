@@ -1,7 +1,11 @@
 package hn.edu.ujcv.progra;
-
+import hn.edu.ujcv.progra.OVecR3;
 public class OMat3x3 {
     // miembros
+    private OVecR3 colX;
+    private OVecR3 colY;
+    private OVecR3 colZ;
+
 
 
     // accesoras y mutadoras
@@ -57,10 +61,11 @@ public class OMat3x3 {
         return new OMat3x3();
     }
 
-    public static OMat3x3 rotZ(double alpha){
+    public static OMat3x3 rotZ(double angulo, OVecR3 vector){
+        OVecR3 retval = new OVecR3();
 
+        return retval;
 
-        return new OMat3x3();
     }
 
     public static OMat3x3 identidad(){
@@ -71,6 +76,28 @@ public class OMat3x3 {
     }
 
     // constructores
+    public OVecR3 getColX() {
+        return colX;
+    }
+
+    public void setColX(OVecR3 colX) {
+        this.colX = colX;
+    }
+    public OVecR3 getColY() {
+        return colY;
+    }
+
+    public void setColY(OVecR3 colY) {
+        this.colY = colY;
+    }
+    public OVecR3 getColZ() {
+        return colZ;
+    }
+
+    public void setColZ(OVecR3 colZ) {
+        this.colZ = colZ;
+    }
+
 
 
 }
